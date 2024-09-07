@@ -29,7 +29,7 @@ namespace Zuy.NoobKnight.LocalPlayer
         {
             public float3 InputDelta;
 
-            public void Execute(ref LocalTransform localTransform, in LocalPlayer localPlayer)
+            public void Execute(ref LocalTransform localTransform, in LocalPlayerComponent localPlayer)
             {
                 localTransform.Position += InputDelta * localPlayer.moveSpeed;
             }

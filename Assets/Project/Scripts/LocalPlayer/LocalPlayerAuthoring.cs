@@ -4,23 +4,23 @@ using UnityEngine;
 
 namespace Zuy.NoobKnight.LocalPlayer
 {
-    public class LocalPlayerAuthoring : MonoBehaviour
+    class LocalPlayerAuthoring : MonoBehaviour
     {
         public float moveSpeed = 5f;
         public bool lerpStopping = false;
-        
-        class LocalPlayerBaker : Baker<LocalPlayerAuthoring>
+    }
+
+    class LocalPlayerBaker : Baker<LocalPlayerAuthoring>
+    {
+        public override void Bake(LocalPlayerAuthoring authoring)
         {
-            public override void Bake(LocalPlayerAuthoring authoring)
+            var entity = GetEntity(TransformUsageFlags.Dynamic);
+            AddComponent(entity, new LocalPlayerComponent
             {
-                var entity = GetEntity(TransformUsageFlags.None);
-                AddComponent(entity, new LocalPlayer
-                {
-                    moveSpeed = authoring.moveSpeed,
-                    lerpStopping = authoring.lerpStopping,
-                    cachedInput = float3.zero
-                });
-            }
+                moveSpeed = authoring.moveSpeed,
+                lerpStopping = authoring.lerpStopping,
+                cachedInput = float3.zero
+            });
         }
     }
 }
