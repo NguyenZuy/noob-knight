@@ -1,17 +1,14 @@
 {
-    "name": "Zuy.NoobKnight.LocalPlayer",
-    "rootNamespace": "Zuy.NoobKnight.LocalPlayer",
+    "name": "Zuy.NoobKnight.Animated",
+    "rootNamespace": "",
     "references": [
         "GUID:734d92eba21c94caba915361bd5ac177",
-        "GUID:2665a8d13d1b3f18800f46e256720795",
         "GUID:d8b63aba1907145bea998dd612889d6b",
-        "GUID:e0cd26848372d4e5c891c569017e11f1",
-        "GUID:a5baed0c9693541a5bd947d336ec7659",
-        "GUID:d81f2a849aea68540913f29541e0a434",
-        "GUID:9087af221b778f5408d7f977fa98df50",
-        "GUID:c7e0381308201ad458e4d447c8b42638",
         "GUID:8819f35a0fc84499b990e90a4ca1911f",
-        "GUID:6bbed298383db1943934dc93e985af07"
+        "GUID:e0cd26848372d4e5c891c569017e11f1",
+        "GUID:7a450cf7ca9694b5a8bfa3fd83ec635a",
+        "GUID:2665a8d13d1b3f18800f46e256720795",
+        "GUID:d81f2a849aea68540913f29541e0a434"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -1,16 +1,22 @@
+//using UnityEditor;
 //using UnityEngine;
+//using Zuy.NoobKnight.Animated;
+//using Zuy.NoobKnight.Editor;
 
-//public class Test : MonoBehaviour
+//namespace Zuy.NoobKnight.Editor
 //{
-//    // Start is called once before the first execution of Update after the MonoBehaviour is created
-//    void Start()
+//    [CustomEditor(typeof(AnimatedCollectionSO))]
+//    public class AnimatedCollectionSOEditor : Editor
 //    {
-//        Camera.main
-//    }
+//        public override void OnInspectorGUI()
+//        {
+//            DrawDefaultInspector();
 
-//    // Update is called once per frame
-//    void Update()
-//    {
-        
+//            AnimatedCollectionSO myScriptableObject = (AnimatedCollectionSO)target;
+//            if (GUILayout.Button("Update CSV"))
+//            {
+//                CSVToScriptableObject.UpdateCSV(myScriptableObject);
+//            }
+//        }
 //    }
 //}

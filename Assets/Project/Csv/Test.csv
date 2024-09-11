@@ -1,0 +1,5 @@
+﻿ID,typeCharacter,material,typeAnimation,speed,textureSheet,typeAnimation,speed,textureSheet
+0,0,Material1.mat,0,1.2,textureSheet1.png,0,1.2,textureSheet1.png
+,,,1,0.9,textureSheet2.png,1,0.9,textureSheet2.png
+1,1,Material2.mat,0,1.5,textureSheet3.png,0,1.5,textureSheet3.png
+,,,1,1,textureSheet4.png,1,1,textureSheet4.png

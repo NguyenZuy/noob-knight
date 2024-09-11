@@ -251,6 +251,21 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.physics": {
+      "version": "1.2.4",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.burst": "1.8.13",
+        "com.unity.entities": "1.2.4",
+        "com.unity.collections": "2.4.3",
+        "com.unity.mathematics": "1.3.1",
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.test-framework": "1.4.3",
+        "com.unity.modules.jsonserialize": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.profiling.core": {
       "version": "1.0.2",
       "depth": 1,
@@ -391,7 +406,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "c9e09c7e191ecb7757333df0f5bd2cb94adb07fb"
+      "hash": "c7b008f2fe89ae6021afeeadcbd233ea41be94a1"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",

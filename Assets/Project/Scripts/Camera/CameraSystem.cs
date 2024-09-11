@@ -11,12 +11,12 @@ namespace Zuy.NoobKnight.Camera
     {
         protected override void OnCreate()
         {
-            RequireForUpdate<LocalPlayerComponent>();
+            RequireForUpdate<LocalPlayer.LocalPlayerComponent>();
         }
 
         protected override void OnUpdate()
         {
-            var localPlayerEntity = EntityManager.CreateEntityQuery(typeof(LocalPlayerComponent)).GetSingletonEntity();
+            var localPlayerEntity = EntityManager.CreateEntityQuery(typeof(LocalPlayer.LocalPlayerComponent)).GetSingletonEntity();
             var localPlayerLocalTransform = EntityManager.GetComponentData<LocalTransform>(localPlayerEntity);
 
             // Target position for the camera (ignore Z-axis)

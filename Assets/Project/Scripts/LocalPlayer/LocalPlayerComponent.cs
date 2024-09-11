@@ -6,7 +6,6 @@ namespace Zuy.NoobKnight.LocalPlayer
     public struct LocalPlayerComponent : IComponentData
     {
         public float moveSpeed;
-        public bool lerpStopping;
-        public float3 cachedInput;
+        public int direction; // 0: left, 1: right, 2: top, 3: bottom
     }
 }
